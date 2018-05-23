@@ -1,0 +1,33 @@
+<ng-container *ngIf="cardHeaderTitle">
+  <mat-toolbar class="header-toolbar" color="accent">
+      <i class="material-icons header-icon">{{cardHeaderIcon}}</i>
+    <span>{{cardHeaderTitle}}</span>
+  </mat-toolbar>
+</ng-container>
+
+<mat-card class="card">
+  <div class="card-pic-div">
+    <img mat-card-image class="card-pic" [src]="cardImage">
+  </div>
+  <span class="summary">
+    <mat-card-title class="mat-card-title">
+      {{cardTitle}}
+    </mat-card-title>
+    <div class="flexbox">
+      <mat-card-subtitle class="mat-card-subtitle">
+        {{cardSubtitle}}
+      </mat-card-subtitle>
+      <mat-card-subtitle *ngIf="cardDuration" class="mat-card-subtitle">
+        {{cardDuration}}
+      </mat-card-subtitle>
+    </div>
+    <hr class="thematic-break">
+    <mat-card-content>
+        <ul>
+          <li *ngFor="let entry of cardContent">
+            {{entry}}
+          </li>
+        </ul>        
+    </mat-card-content>
+  </span>
+</mat-card>    

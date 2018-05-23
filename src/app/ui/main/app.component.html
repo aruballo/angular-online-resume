@@ -1,0 +1,47 @@
+<mat-toolbar class="main-toolbar" color="primary">
+    <i class="material-icons">assignment</i>
+    <span>Online Resume</span>
+</mat-toolbar>
+<div class="main-div fade-in">
+  <div class="section-div">
+    <info-snapshot
+      [cardHeaderTitle]="profileHeaderTitle"
+      [cardHeaderIcon]="profileHeaderIcon"
+      [cardColor]="profileHeaderColor" 
+      [cardTitle]="profileTitle" 
+      [cardSubtitle]="profileSubtitle" 
+      [cardContent]="profileContent" 
+      [cardImage]="profileImage">
+    </info-snapshot>
+  </div>
+  
+  <div class="section-div">
+    <info-snapshot
+      [cardHeaderTitle]="workHeaderTitle"
+      [cardHeaderIcon]="workHeaderIcon"
+      [cardColor]="workHeaderColor"  
+      [cardTitle]="loanDepotTitle" 
+      [cardSubtitle]="loanDepotSubtitle"
+      [cardDuration]="loanDepotDuration" 
+      [cardContent]="loanDepotContent" 
+      [cardImage]="loanDepotImage">
+    </info-snapshot>
+    <info-snapshot 
+      [cardTitle]="profoundTitle" 
+      [cardSubtitle]="profoundSubtitle"
+      [cardDuration]="loanDepotDuration"  
+      [cardContent]="profoundContent" 
+      [cardImage]="profoundImage">
+    </info-snapshot>
+    <info-snapshot 
+      [cardTitle]="profoundTwoTitle" 
+      [cardSubtitle]="profoundTwoSubtitle"
+      [cardDuration]="loanDepotDuration"  
+      [cardContent]="profoundTwoContent" 
+      [cardImage]="profoundTwoImage">
+    </info-snapshot>
+  </div>
+</div>
+
+
+
