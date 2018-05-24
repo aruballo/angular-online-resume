@@ -24,6 +24,7 @@
     right: 0;
     z-index: 2;
     justify-content: center;
+    background: #262626;
 }
 
 @-webkit-keyframes fadeIn {
@@ -71,6 +72,6 @@ ul {
     margin-right: 5px;
 }
 
-.contact-info {
+.contact-info, .education-info {
     padding-top: 26px;
 }

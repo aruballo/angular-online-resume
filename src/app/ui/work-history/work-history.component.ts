@@ -58,7 +58,7 @@ export class WorkHistoryComponent implements OnInit {
 
     this.profoundTwoTitle = "Profound Logic Software";
     this.profoundTwoSubtitle = "Support Engineer";
-    this.profoundDuration = "June 2012 - June 2015"
+    this.profoundTwoDuration = "June 2012 - June 2015"
     this.profoundTwoContent = [
       "Resolved customer issues and bugs in large front-end Javascript framework across all major browsers, with a range of 5-10 incoming issues per day.",
       "Assisted in the creation of new UI themes and elements for our in-broswer UI editor.",

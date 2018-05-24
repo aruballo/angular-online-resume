@@ -6,8 +6,8 @@
 </ng-container>
 
 <mat-card class="card">
-  <div class="card-pic-div">
-    <img mat-card-image class="card-pic" [src]="cardImage">
+  <div [ngClass]="cardPicDivClasses">
+    <img mat-card-image [ngClass]="cardPicClasses" [src]="cardImage">
   </div>
   <span class="summary">
     <mat-card-title class="mat-card-title">

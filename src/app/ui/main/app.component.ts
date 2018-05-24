@@ -46,9 +46,8 @@ export class AppComponent implements OnInit{
     this.profileContent = [
       "I have over 5+ years of experience working with Front End Web Development technologies such as HTML5, CSS3 and Javascript.",
       "I have been working professionally wih Angular, Webpack, Typescript and node for the past year.",
-      "My current interests lie in working with bright individuals in a challenging environment as a Front End Web Developer to develop modern web applications and expand my skillset.",
-      "I have been described as a self-driven, dedicated, and intelligent worker by my peers and managers. I am always looking to be challenged and to expand my knowledge in my profession, and all other aspects of my life.",
-      "I enjoy identifying and conquering problems; even if the road there can often be time consuming and frustrating. The journey, and experience gained from it, is very rewarding.",
+      "My current interests lie in working with bright individuals in a challenging environment as a Front End Web Developer to develop modern applications and expand my skillset.",
+      "I have been described as a self-driven, dedicated, and intelligent worker by my peers and managers. I am always looking to be challenged and to expand my knowledge of my profession",
       "In my downtime I enjoy weightlifting, working on my cars, playing video games, rooting for the LA Kings, and taking vacations with my wife."
     ];
     this.profileImage = "assets/img/antonio.jpg";
