@@ -5,12 +5,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './ui/main/app.component';
 import { InfoSnapshotComponent } from './ui/info-snapshot/info-snapshot.component';
 import { ContactInfoComponent} from './ui/contact-info/contact-info.component';
+import { WorkHistoryComponent} from './ui/work-history/work-history.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactInfoComponent,
-    InfoSnapshotComponent
+    InfoSnapshotComponent,
+    WorkHistoryComponent
   ],
   imports: [
     BrowserAnimationsModule,
