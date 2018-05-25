@@ -7,13 +7,17 @@ import { InfoSnapshotComponent } from './ui/info-snapshot/info-snapshot.componen
 import { ContactInfoComponent } from './ui/contact-info/contact-info.component';
 import { WorkHistoryComponent } from './ui/work-history/work-history.component';
 import { EducationInfoComponent } from './ui/education/education-info.component';
+import { ProjectsInfoComponent } from './ui/projects/projects-info.component';
+import { CarouselBoxComponent } from './ui/carousel-box/carousel-box.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    CarouselBoxComponent,
     ContactInfoComponent,
     EducationInfoComponent,
     InfoSnapshotComponent,
+    ProjectsInfoComponent,
     WorkHistoryComponent
   ],
   imports: [

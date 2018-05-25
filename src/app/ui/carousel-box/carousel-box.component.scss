@@ -1,0 +1,57 @@
+.carouselbox {
+  font-family: helvetica,sans-serif;
+  font-size: 14px;
+  position: relative;
+  margin: 1em;
+  overflow: hidden;
+}
+
+.active {
+  height: 600px;
+}
+
+.content {
+  margin: 0;
+  padding: 0;
+}
+.content li {
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
+
+.active li {
+  position: absolute;
+  top: 600px;
+}
+.active li.current {
+  top: 0;
+  height: 600px;
+}
+
+.active .buttons {
+  padding: 5px 0;
+  background: #eee;
+  text-align: center;
+  z-index: 10;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+}
+.carouselbox button {
+  border: none;
+  display: none;
+}
+.active button {
+  display: inline-block;
+} 
+.prev, .next {
+  height: 30px;
+}
+
+.carousel-image {
+  width: 100%;
+}

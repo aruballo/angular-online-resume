@@ -1,0 +1,48 @@
+.card {
+    padding: 0px;
+    overflow: hidden;
+    min-height: 60px;
+}
+
+.summary {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.thematic-break {
+    margin-right: 5px;
+}
+
+.header-toolbar {
+    justify-content: center;
+    height: 48px;
+}
+
+.mat-card-title {
+    margin-bottom: 8px;
+}
+
+.header-icon {
+    margin: 5px;
+}
+
+.card-content-list {
+    padding-right: 5px;
+}
+
+.linkedin-icon, .github-icon {
+    height: 22px;
+}
+
+.contact-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact-div > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

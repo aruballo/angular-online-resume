@@ -1,27 +1,37 @@
 <mat-toolbar class="main-toolbar" color="primary">
-    <i class="material-icons">assignment</i>
-    <span>Online Resume</span>
+  <i class="material-icons">assignment</i>
+  <span>Online Resume</span>
 </mat-toolbar>
+<div class="carousel-box">
+  <carousel-box>
+  </carousel-box>
+</div>
 <div class="main-div fade-in">
-  <div class="section-div">
-    <info-snapshot
-      [cardHeaderTitle]="profileHeaderTitle"
-      [cardHeaderIcon]="profileHeaderIcon"
-      [cardColor]="profileHeaderColor" 
-      [cardTitle]="profileTitle" 
-      [cardSubtitle]="profileSubtitle" 
-      [cardContent]="profileContent" 
-      [cardImage]="profileImage">
-    </info-snapshot>
-    <contact-info class="contact-info">
-    </contact-info>
-    <education-info class="education-info">
-    </education-info>
+  <div class="section-div align-flex-end">
+    <div class="card-div">
+      <info-snapshot
+        [cardHeaderTitle]="profileHeaderTitle"
+        [cardHeaderIcon]="profileHeaderIcon"
+        [cardColor]="profileHeaderColor" 
+        [cardTitle]="profileTitle" 
+        [cardSubtitle]="profileSubtitle" 
+        [cardContent]="profileContent" 
+        [cardImage]="profileImage">
+      </info-snapshot>
+    </div>
+    <div class="card-div">
+      <contact-info class="contact-info">
+      </contact-info>
+    </div>
+    <div class="card-div">
+      <education-info class="education-info">
+      </education-info>
+    </div>
   </div>
-  <div class="section-div">
-    <work-history></work-history>
-  </div>
-  <div class="section-div">
+  <div class="section-div align-flex-start">
+    <div class="card-div">
+      <work-history></work-history>
+    </div>
   </div>
 </div>
 
