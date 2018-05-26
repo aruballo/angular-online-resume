@@ -1,29 +1,71 @@
-.carousel-box {
-    padding-top: 80px;
-    margin: auto;
-    width: 1560px;
+@media only screen and (max-width: 1586px){
+    .main-div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .align-flex-end, .align-flex-start {
+        align-items: center;
+    }
+
+    .card-div {
+        max-width: 968px;
+        min-width: 655px;
+        width: 100%;
+    }
+
+    .carousel-box-div {
+        max-width: 968px;
+        width: 100%;
+    }
 }
 
-.section-div, .main-toolbar > span {
+@media only screen and (min-width: 1587px){
+    .main-div{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .carousel-box-div {
+        max-width: 1560px;
+        width: 100%;
+    }
+
+    .align-flex-end {
+        align-items: flex-end;
+        padding-right: 12px;
+    }
+    
+    .align-flex-start {
+        align-items: flex-start;
+        padding-left: 12px;
+    }
+
+    .card-div {
+        max-width: 968px;
+        min-width: 768px;
+    }
+}
+
+.carousel-box {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.main-toolbar > span {
     padding: 10px;
 }
+
 .section-div {
     width: 100%;
     display: flex;
     flex-direction: column;
-}
-
-.align-flex-end {
-    align-items: flex-end;
-}
-
-.align-flex-start {
-    align-items: flex-start;
+    padding-top: 25px;
 }
 
 .card-div {
-    max-width: 968px;
-    min-width: 768px;
     padding-bottom: 25px;
 }
 
@@ -62,8 +104,6 @@
 }
 
 .main-div {
-    display: flex;
-    flex-direction: row;
     -webkit-animation-duration: 3s;
     animation-duration: 3s;
     -webkit-animation-fill-mode: both;

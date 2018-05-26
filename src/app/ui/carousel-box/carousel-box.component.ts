@@ -9,40 +9,38 @@ export class CarouselBoxComponent implements OnInit {
   public neighborhoodAppPic: string;
   public gwentPic: string;
   public ladyBugPic: string;
+  public box: HTMLElement;
+  public items: NodeListOf<Element>;
+  public counter: number;
+  public current: Element;
+  public amount: number;
 
   ngOnInit() {
     this.neighborhoodAppPic = '/assets/img/neighborhood-app.PNG';
     this.gwentPic = '/assets/img/gwent.png';
     this.ladyBugPic = '/assets/img/radioactive-ladybugs.png';
 
-    var box = document.querySelector('.carouselbox');
-    var next = box.querySelector('.next');
-    var prev = box.querySelector('.prev');
-    var items = box.querySelectorAll('.content li');
-    var counter = 0;
-    var amount = items.length;
-    var current = items[0];
-    box.classList.add('active');
-    function navigate(direction) {
-      current.classList.remove('current');
-      counter = counter + direction;
-      if (direction === -1 && 
-          counter < 0) { 
-        counter = amount - 1; 
-      }
-      if (direction === 1 && 
-          !items[counter]) { 
-        counter = 0;
-      }
-      current = items[counter];
-      current.classList.add('current');
+    this.box = document.querySelector('.carouselbox');
+    this.items = this.box.querySelectorAll('.content li');
+    this.counter = 0;
+    this.amount = this.items.length;
+    this.current = this.items[0];
+    this.box.classList.add('active');
+    this.navigate(0);
+  }
+
+  public navigate(direction) {
+    this.current.classList.remove('current');
+    this.counter = this.counter + direction; 
+    if (direction === -1 && 
+        this.counter < 0) { 
+      this.counter = this.amount - 1; 
     }
-    next.addEventListener('click', function(ev) {
-      navigate(1);
-    });
-    prev.addEventListener('click', function(ev) {
-      navigate(-1);
-    });
-    navigate(0);
+    if (direction === 1 && 
+        !this.items[this.counter]) { 
+      this.counter = 0;
+    }
+    this.current = this.items[this.counter];
+    this.current.classList.add('current');
   }
 }

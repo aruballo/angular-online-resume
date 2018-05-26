@@ -5,29 +5,6 @@
 <mat-card class="card">
   <div class="carouselbox active">
     <ol class="content">
-      <li class="project neighborhoodApp">
-        <span class="project-hover-info">
-          <div class="project-hover-div">
-            <div class="project-hover-content-div">
-              <div class="project-hover-description-div">
-                <p class="project-title">Neighborhood App</p>
-                <p class="project-subtitle">Published August 2016</p>
-                <p>
-                  Single page application built using knockout.js and hosted on Github Pages.
-                  <br/>
-                  Full page Google map application that display nearby locations listed on Yelp.
-                  <br/>
-                  Allows for filtering by distance, categories, subcategories, or you can search by keywords manually.
-                  <br/>
-                  Brings up the top results on the map, allowing you to click on them and view ratings, reviews, etc. in the pop up windows on the map
-                </p>
-                <a href="http://aruballo.github.io/neighborhoodapp/" target="_blank" mat-stroked-button>Click here to try it!</a>
-              </div>
-            </div>
-          </div>
-        </span>
-        <img class="carousel-image" [src]="neighborhoodAppPic">
-      </li>
       <li class="project gwent">
         <span class="project-hover-info">
           <div class="project-hover-div">
@@ -50,6 +27,29 @@
           </div>
         </span>
         <img class="carousel-image" [src]="gwentPic">
+      </li>
+      <li class="project gwent">
+        <span class="project-hover-info">
+          <div class="project-hover-div">
+            <div class="project-hover-content-div">
+              <div class="project-hover-description-div">
+                <p class="project-title">Neighborhood App</p>
+                <p class="project-subtitle">Published August 2016</p>
+                <p>
+                  Single page application built using knockout.js and hosted on Github Pages.
+                  <br/>
+                  Full page Google map application that display nearby locations listed on Yelp.
+                  <br/>
+                  Allows for filtering by distance, categories, subcategories, or you can search by keywords manually.
+                  <br/>
+                  Brings up the top results on the map, allowing you to click on them and view ratings, reviews, etc. in the pop up windows on the map
+                </p>
+                <a href="http://aruballo.github.io/neighborhoodapp/" target="_blank" mat-stroked-button>Click here to try it!</a>
+              </div>
+            </div>
+          </div>
+        </span>
+        <img class="carousel-image" [src]="neighborhoodAppPic">
       </li>
       <li class="project ladybug">
         <span class="project-hover-info">
@@ -74,10 +74,10 @@
       </li>
     </ol>
     <div class="buttons">
-      <button class="prev">
+      <button class="prev" (click)="navigate(-1)">
           <i class="material-icons">chevron_left</i>
       </button>
-      <button class="next">
+      <button class="next" (click)="navigate(1)">
           <i class="material-icons">chevron_right</i>
       </button>
     </div>
