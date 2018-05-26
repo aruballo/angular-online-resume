@@ -7,10 +7,14 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CarouselBoxComponent implements OnInit {
   public neighborhoodAppPic: string;
+  public gwentPic: string;
+  public ladyBugPic: string;
 
   ngOnInit() {
     this.neighborhoodAppPic = '/assets/img/neighborhood-app.PNG';
-    
+    this.gwentPic = '/assets/img/gwent.png';
+    this.ladyBugPic = '/assets/img/radioactive-ladybugs.png';
+
     var box = document.querySelector('.carouselbox');
     var next = box.querySelector('.next');
     var prev = box.querySelector('.prev');

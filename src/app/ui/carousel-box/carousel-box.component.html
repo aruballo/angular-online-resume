@@ -1,18 +1,85 @@
-<div class="carouselbox active">
-  <ol class="content">
-    <li>
-      <img class="carousel-image" [src]="neighborhoodAppPic">
-    </li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-  </ol>
-  <div class="buttons">
-    <button class="prev">
-        <i class="material-icons">chevron_left</i>
-    </button>
-    <button class="next">
-        <i class="material-icons">chevron_right</i>
-    </button>
+<mat-toolbar class="header-toolbar" color="accent">
+    <i class="material-icons header-icon">assignment</i>
+  <span>Projects</span>
+</mat-toolbar>
+<mat-card class="card">
+  <div class="carouselbox active">
+    <ol class="content">
+      <li class="project neighborhoodApp">
+        <span class="project-hover-info">
+          <div class="project-hover-div">
+            <div class="project-hover-content-div">
+              <div class="project-hover-description-div">
+                <p class="project-title">Neighborhood App</p>
+                <p class="project-subtitle">Published August 2016</p>
+                <p>
+                  Single page application built using knockout.js and hosted on Github Pages.
+                  <br/>
+                  Full page Google map application that display nearby locations listed on Yelp.
+                  <br/>
+                  Allows for filtering by distance, categories, subcategories, or you can search by keywords manually.
+                  <br/>
+                  Brings up the top results on the map, allowing you to click on them and view ratings, reviews, etc. in the pop up windows on the map
+                </p>
+                <a href="http://aruballo.github.io/neighborhoodapp/" target="_blank" mat-stroked-button>Click here to try it!</a>
+              </div>
+            </div>
+          </div>
+        </span>
+        <img class="carousel-image" [src]="neighborhoodAppPic">
+      </li>
+      <li class="project gwent">
+        <span class="project-hover-info">
+          <div class="project-hover-div">
+            <div class="project-hover-content-div">
+              <div class="project-hover-description-div">
+                <p class="project-title">Gwent Card Deck Builder</p>
+                <p class="project-subtitle">Published February 2017</p>
+                <p>
+                  Browser based application for card selection based on a card game from a popular RPG video game (Witcher)
+                  <br/>
+                  Developed using React, Redux, Webpack, Babel and node.
+                  <br/>
+                  Allows a user to select a deck type, select individual cards that make up the deck, see statistics on their current deck build, and more.
+                  <br/>
+                  Future plan to create a browser port of the actual gwent card game; this is just currently the UI for deck building.
+                </p>
+                <a href="https://aruballo.github.io/gwent/" target="_blank" mat-stroked-button>Click here to try it!</a>
+              </div>
+            </div>
+          </div>
+        </span>
+        <img class="carousel-image" [src]="gwentPic">
+      </li>
+      <li class="project ladybug">
+        <span class="project-hover-info">
+          <div class="project-hover-div">
+            <div class="project-hover-content-div">
+              <div class="project-hover-description-div">
+                <p class="project-title">Radioactive Ladybugs</p>
+                <p class="project-subtitle">Published July 2016</p>
+                <p>
+                  Browser based frogger clone, created with Javascript, HTML5 and CSS3.
+                  <br/>
+                  Developed with native Javascript code using the canvas API offered in HTML5 for use across all major browsers. 
+                  <br/>
+                  Users get 3 lives and score points for making it into the water; if a ladybug hits you, a life is lost.
+                </p>
+                <a href="http://aruballo.github.io/Arcade-Game/" target="_blank" mat-stroked-button>Click here to try it!</a>
+              </div>
+            </div>
+          </div>
+        </span>
+        <img class="carousel-image" [src]="ladyBugPic">
+      </li>
+    </ol>
+    <div class="buttons">
+      <button class="prev">
+          <i class="material-icons">chevron_left</i>
+      </button>
+      <button class="next">
+          <i class="material-icons">chevron_right</i>
+      </button>
+    </div>
   </div>
-</div>
+</mat-card>   
