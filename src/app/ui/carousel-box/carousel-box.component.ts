@@ -16,7 +16,7 @@ export class CarouselBoxComponent implements OnInit {
   public amount: number;
 
   ngOnInit() {
-    this.neighborhoodAppPic = '/assets/img/neighborhood-app.PNG';
+    this.neighborhoodAppPic = '/assets/img/neighborhood-app.png';
     this.gwentPic = '/assets/img/gwent.png';
     this.ladyBugPic = '/assets/img/radioactive-ladybugs.png';
 
