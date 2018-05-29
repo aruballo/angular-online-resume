@@ -22,14 +22,14 @@ export class CarouselBoxComponent implements OnInit {
   public ladyBugPicSizes: string;
 
   ngOnInit() {
-    this.neighborhoodAppPic = 'assets/img/neighborhood-app.png';
-    this.gwentPic = 'assets/img/gwent.png';
+    this.neighborhoodAppPic = 'assets/img/neighborhood-app.jpg';
+    this.gwentPic = 'assets/img/gwent.jpg';
     this.ladyBugPic = 'assets/img/radioactive-ladybugs.png';
 
-    this.gwentPicSrcSet = "assets/img/gwent-960.png 960w, assets/img/gwent.png 1920w";
+    this.gwentPicSrcSet = "assets/img/gwent-960.png 960w, assets/img/gwent.jpg 1920w";
     this.gwentPicSizes = "(max-width: 1585px) 960px, (min-width: 1586px) 1512px";
 
-    this.neighborhoodAppPicSrcSet = "assets/img/neighborhood-app-960.png 960w, assets/img/neighborhood-app.png 1920w";
+    this.neighborhoodAppPicSrcSet = "assets/img/neighborhood-app-960.png 960w, assets/img/neighborhood-app.jpg 1920w";
     this.neighborhoodAppPicSizes = "(max-width: 1585px) 960px, (min-width: 1586px) 1512px";
 
     this.box = document.querySelector('.carouselbox');
