@@ -1,5 +1,57 @@
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 630px) {
 
+    .card-pic-default-max-height {
+        max-width: 60px;
+    }  
+
+    .card-pic-div {
+        width: 60px;
+        display: inline-block;
+        position: relative;
+    }
+
+    .card-pic { 
+        max-width: 60px;
+    }
+
+    .card-pic-div-default-height {
+        height: 320px;
+    }
+
+    .mat-card-image:first-child {
+        margin-top: 0;
+    }
+
+    .mat-card-image {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 631px) {
+    .card-pic-default-max-height {
+        max-height: 185px;
+    }  
+
+    .card-pic-div-default-height {
+        height: 275px;
+    }
+
+    .card-pic-div {
+        width: 165px;
+        display: inline-block;
+        position: relative;
+    }
+
+    .card-pic {
+        vertical-align: middle;
+        top: 0;  
+        bottom: 0;  
+        left: 0;  
+        right: 0;  
+        margin: auto !important;
+        max-width: 165px;
+        position: absolute;
+    }
 }
 
 .card {
@@ -28,33 +80,8 @@ ul {
     height: 48px;
 }
 
-.card-pic {
-    vertical-align: middle;
-    top: 0;  
-    bottom: 0;  
-    left: 0;  
-    right: 0;  
-    margin: auto !important;
-    max-width: 165px;
-    position: absolute;
-}
-
-.card-pic-default-max-height {
-    max-height: 185px;
-}
-
 .card-pic-small-max-height {
     max-height: 117px;
-}
-
-.card-pic-div {
-    width: 165px;
-    display: inline-block;
-    position: relative;
-}
-
-.card-pic-div-default-height {
-    height: 275px;
 }
 
 .card-pic-div-small-height {
